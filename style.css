@@ -1,0 +1,351 @@
+﻿*{ 
+    margin: 0px; 
+    padding: 0px; 
+}
+body{
+    margin: 0;
+    color: #333;
+}
+h1{
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-size:25px;
+    font-family: 'Arial',sans-serif;
+    color: #fff;
+}
+h2{
+    margin-bottom: 0.5em;
+}
+p{
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+dl{
+    margin-bottom: 10px;
+}
+dt{
+    border-left: 5px solid #3366FF;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+dd{
+    margin-bottom: 0.5em;
+}
+th,td{
+    border: 1px solid #999;
+    padding: 3px;
+}
+th{
+    background-color: #106eb7;
+    color: #fff;
+    font-weight: bold;
+}
+#guidance{
+    font-size: 18px;
+    color: #3366FF;
+}
+/*入力欄*/
+input[type="text"]{
+    display: inline-block;
+    width: 300px;
+    padding:10px;
+    line-height: 1;
+    border: 1px solid #3366FF;
+    box-sizing: border-box;
+    background: white;
+    margin: 0.5em 0;
+}
+input[type="text"]:focus {
+    outline: solid 1px blue;
+}
+input[type="password"]{
+    display: inline-block;
+    width: 300px;
+    padding:10px;
+    line-height: 1;
+    border: 1px solid #3366FF;
+    box-sizing: border-box;
+    background: white;
+    margin: 0.5em 0;
+}
+input[type="password"]:focus {
+    outline: solid 1px blue;
+}
+/*エラーメッセージ*/
+.notdisplay{/*index.php,member.php*/
+    color: red;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+.caution {/*join/check.php,join/index.php,login.php*/
+    font-size: 90%;
+    color:red;
+}
+/*各ページボタン*/
+.btn {/*join/check.php,join/index.php,index.php,login.php*/
+    background-color: #3366FF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    padding:10px 0;
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #3366FF;
+    font-size: 15px;
+}
+.btn:hover{/*join/check.php,join/index.php,index.php,login.php*/
+    background-color :white;
+    color:#3366FF;
+}
+/*ページネーション*/
+.page{/*index.php,member.php*/
+    margin-top: 10px;
+    text-align: center;
+}
+/*HTML大枠*/
+.outline{/*join/check.php,join/index.php,join/thanks.php,index.php,login.php,member.php,view.php*/
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+}
+/*内容*/
+.content {/*join/check.php,join/index.php,join/thanks.php,index.php,login.php,member.php,view.php*/
+    width: 975px;
+    height: 575px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 25px;
+    color:black ;
+    font-family: 'Arial',sans-serif;
+    }
+/*ヘッダー*/
+.header{/*join/check.php,join/index.php,join/thanks.php,index.php,login.php,member.php,view.php*/
+    background-color: #3366FF;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.headerdetail{/*index.php,member.php,view.php*/
+    display: flex;
+}
+/*ヘッダー時刻表示*/
+#datetime{/*index.php,view.php*/
+    padding-top: 15px;
+    padding-left: 400px;
+    padding-right: 50px;
+    color: #fff!important;
+}
+/*戻る*/
+.return{/*join/check.php,member.php,view.php*/
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+/*メンバー（登録済ユーザー）リスト表示リンク*/
+#member{/*index.php*/
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+/*ユーザー登録完了→ログイン*/
+#logincompletion {/*join/thanks.php*/
+    background-color: #3366FF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    padding:10px 0;
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #3366FF;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+}
+#logincompletion:hover {/*join/thanks.php*/
+    background-color :white;
+    color: #3366FF;
+}
+/*ユーザー登録リンク*/
+#userregistration {/*login.php*/
+    background-color: #3366FF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    padding:10px 0;
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #3366FF;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+}
+#userregistration:hover {/*login.php*/
+    background-color :white;
+    color: #3366FF;
+}
+/*コミュニケーションページ・メンバー（登録済ユーザー）一覧image*/
+.msg {/*index.php,member.php*/
+    clear: both;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+.msg img {/*index.php,member.php*/
+    float: left;
+    margin-right: 5px;
+}
+.msg p {/*index.php,member.php*/
+    margin: 0;
+}
+/*ポップアップ index.php*/
+.open {
+	cursor:pointer;
+    color: white;
+    border: 1px solid #3366FF;
+    background-color:#3366FF;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+.open:hover {/*index.php*/
+    background-color :white;
+    color: #3366FF;
+}
+#pop-up {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#pop-up:checked + .overlay {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+.window {
+	width: 180vw;
+	max-width: 900px;
+	height: 150px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text {
+	font-size: 15px;
+	margin: 0;
+}
+.close {
+	cursor:pointer;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	font-size: 20px;
+}
+/*コミュニケーションページログアウト*/
+#loginout {/*index.php*/
+    background-color: deeppink;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    padding:10px 0;
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid deeppink;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    margin-left: 700px;
+}
+#loginout:hover {/*index.php*/
+    background-color :white;
+    color: deeppink;
+}
+/*ユーザー登録画面リンク*/
+#register{/*login.php*/
+margin-top: 25px;
+margin-bottom: 20px;
+}
+/*コミュニケーションページ投稿者表示*/
+#contributor{/*index.php*/
+    color: #999;
+}
+/*メンバー（登録済ユーザー）連絡先*/
+#contactid{/*member.php*/
+    color: #999;
+}
+#contactname{/*member.php*/
+    color: #999;
+}
+#contactaddress{/*member.php*/
+    color: #999;
+}
+/*コミュニケーションページ投稿者・投稿時間*/
+#postname{/*view.php*/
+    color: #999;
+}
+#posttime{/*view.php*/
+    color: #999;
+}
+/*ユーザー登録必須項目*/
+.required {/*join/index.php*/
+    background-color: deeppink;
+    color: #fff;
+    font-size:15px;
+    padding: 2px;
+    margin-left: 10px;
+}
+/*入力事項案内*/
+#information {/*login.php*/
+    margin-bottom: 1em;
+}
+/*フッター*/
+#footer{/*join/check.php,join/index.php,join/thanks.php,index.php,login.php,member.php,view.php*/
+    background-color: #3366FF;
+    text-align: center;
+    height:50px;
+}
+#year{/*join/check.php,join/index.php,join/thanks.php,index.php,login.php,member.php,view.php*/
+    padding-top:15px;
+    color:white;
+}
